@@ -1,0 +1,40 @@
+{
+  "name": "dynamic-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@blockscout/rootstock-global-wallet": "^0.0.1-alpha.0",
+    "@dynamic-labs/ethereum": "*",
+    "@dynamic-labs/sdk-react-core": "*",
+    "@dynamic-labs/solana": "*",
+    "crypto-browserify": "^3.12.0",
+    "next": "15.1.6",
+    "process": "^0.11.10",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "stream-browserify": "^3.0.0",
+    "viem": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "@eslint/eslintrc": "^3"
+  },
+  "browser": {
+    "crypto": false
+  },
+  "overrides": {
+    "rpc-websockets": "7.10.0",
+    "@solana/web3.js": "1.91.6"
+  }
+}
