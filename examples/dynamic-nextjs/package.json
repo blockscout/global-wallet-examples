@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@blockscout/rootstock-global-wallet": "^0.0.1-alpha.0",
+    "@blockscout/rootstock-global-wallet": "^1.0.0",
     "@dynamic-labs/ethereum": "*",
     "@dynamic-labs/sdk-react-core": "*",
     "@dynamic-labs/solana": "*",
