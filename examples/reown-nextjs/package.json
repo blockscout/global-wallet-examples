@@ -1,0 +1,36 @@
+{
+  "name": "global-wallets-nextjs-wagmi",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@blockscout/rootstock-global-wallet": "^1.0.1",
+    "@reown/appkit": "1.8.16",
+    "@reown/appkit-adapter-wagmi": "1.8.16",
+    "@tanstack/react-query": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "viem": "latest",
+    "wagmi": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
+  },
+  "pnpm": {
+    "overrides": {
+      "@walletconnect/universal-provider": "2.23.1",
+      "@walletconnect/logger": "3.0.1",
+      "viem": "2.43.5",
+      "ufo": "1.6.2"
+    }
+  }
+}
