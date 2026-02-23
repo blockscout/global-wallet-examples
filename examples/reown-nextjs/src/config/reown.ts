@@ -1,6 +1,6 @@
 import { createAppKit } from '@reown/appkit/react'
 import { WagmiAdapter } from '@reown/appkit-adapter-wagmi'
-import { mainnet, sepolia } from '@reown/appkit/networks'
+import { mainnet, sepolia, rootstock, rootstockTestnet } from '@reown/appkit/networks'
 import { QueryClient } from '@tanstack/react-query'
 import { cookieStorage, createStorage } from 'wagmi'
 
@@ -13,7 +13,7 @@ if (!projectId) {
 
 // Create wagmiAdapter
 export const wagmiAdapter = new WagmiAdapter({
-  networks: [mainnet, sepolia],
+  networks: [mainnet, sepolia, rootstock, rootstockTestnet],
   projectId,
   ssr: true,
   storage: createStorage({
@@ -27,7 +27,7 @@ export const queryClient = new QueryClient()
 // Create modal
 export const modal = createAppKit({
   adapters: [wagmiAdapter],
-  networks: [mainnet, sepolia],
+  networks: [mainnet, sepolia, rootstock, rootstockTestnet],
   projectId,
   metadata: {
     name: 'Global Wallets',
